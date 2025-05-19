@@ -3,106 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chenab Bridge: Steel Meets the Sky</title>
+  <title>Akshardham Temple – Spiritual and Architectural Wonder</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
-    body { scroll-behavior: smooth; font-family: 'Segoe UI', sans-serif; }
-    .highlight { color: #ff5722; font-weight: bold; }
-    .section-title { color: #1f2937; font-size: 2.25rem; margin-bottom: 1rem; }
-    .bg-hero { background-image: url('https://www.investindia.gov.in/sites/default/files/2023-08/Chenab%20Bridge.jpg'); background-size: cover; background-position: center; }
+    body { scroll-behavior: smooth; }
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: #BC906E;
+      margin: 10px auto;
+    }
+    .transition-colors {
+      font-weight: bold;
+    }
+    .transition-colors:hover {
+      background-color: #d6c0af;
+      padding: 10px;
+    }
+    footer {
+      background-color: #BC906E;
+    }
+    h1 {
+      color: #b48460;
+    }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-  <!-- Hero Section -->
-  <section class="bg-hero h-screen flex items-center justify-center text-center text-white px-4">
-    <div class="bg-black bg-opacity-50 p-6 rounded-lg">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">🌉 Chenab Bridge: Where Steel Meets the Sky</h1>
-      <p class="text-lg md:text-2xl">A triumph of engineering in the Himalayas</p>
+  <header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <h1 class="text-xl font-bold text-[#b48460]">🙏 Akshardham</h1>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-[#b48460] focus:outline-none text-2xl">
+      ☰
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 text-sm font-semibold" aria-label="Primary navigation">
+      <a href="#overview" class="transition-colors hover:text-[#BC906E]">Overview</a>
+      <a href="#architecture" class="transition-colors hover:text-[#BC906E]">Architecture</a>
+      <a href="#features" class="transition-colors hover:text-[#BC906E]">Features</a>
+      <a href="#importance" class="transition-colors hover:text-[#BC906E]">Spirituality</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu Items -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white shadow text-sm font-semibold">
+    <a href="#overview" class="block transition-colors hover:text-[#BC906E]">Overview</a>
+    <a href="#architecture" class="block transition-colors hover:text-[#BC906E]">Architecture</a>
+    <a href="#features" class="block transition-colors hover:text-[#BC906E]">Features</a>
+    <a href="#importance" class="block transition-colors hover:text-[#BC906E]">Spirituality</a>
+  </div>
+</header>
+
+  <section class="relative bg-cover bg-center h-96 text-white" style="background-image: url('https://i.pinimg.com/736x/01/13/8e/01138ebe7ac2e4323cd53c8b9ae614cb.jpg');">
+    <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+      <h2 class="text-4xl font-bold text-center">A Divine Blend of Spirituality, Culture & Art</h2>
     </div>
   </section>
 
-  <!-- Intro -->
-  <section class="py-16 px-6 max-w-6xl mx-auto" data-aos="fade-up">
-    <p class="text-lg leading-relaxed">
-      High in the Himalayas, where the <span class="highlight">Chenab River</span> carves through gorges, India dared to dream big. This bridge is more than metal and bolts — it’s a tale of <span class="highlight">vision, perseverance</span>, and an <span class="highlight">engineering marvel</span> that connects hearts and valleys.
-    </p>
-  </section>
-
-  <!-- Timeline & Features -->
-  <section class="bg-white py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12" data-aos="fade-up">
-    <div>
-      <h2 class="section-title">🏗️ From Dream to Reality</h2>
-      <ul class="list-disc list-inside text-lg">
-        <li>Part of <span class="highlight">USBRL</span> project to connect Kashmir</li>
-        <li>Located in <span class="highlight">Reasi district</span>, Jammu & Kashmir</li>
-        <li>Bridge height: <span class="highlight">359m</span> — higher than Eiffel Tower</li>
-        <li>Length: 1,315m | Arch span: 467m</li>
-      </ul>
-    </div>
-    <div>
-      <h2 class="section-title">🏆 World Record Bridge</h2>
-      <ul class="list-disc list-inside text-lg">
-        <li>Highest railway bridge on Earth</li>
-        <li>Withstands <span class="highlight">winds up to 266 km/h</span></li>
-        <li>Built using <span class="highlight">28,000 tonnes</span> of steel</li>
-        <li>Completed in 2022, trial run in Aug 2023</li>
-      </ul>
+  <section id="overview" class="py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center section-title">📜 Overview</h2>
+    <div class="mt-6 grid sm:grid-cols-2 gap-6">
+      <div>
+        <p><strong>Location:</strong> NH 24, Near Noida Mor, Delhi</p>
+        <p><strong>Opened:</strong> 6 November 2005</p>
+        <p><strong>Founder:</strong> Pramukh Swami Maharaj (BAPS)</p>
+      </div>
+      <div>
+        <p><strong>Dedicated to:</strong> Bhagwan Swaminarayan (1781–1830)</p>
+        <p><strong>Visitors per day:</strong> 8,000+ (average)</p>
+        <p><strong>Meaning:</strong> “Abode of the Eternal”</p>
+      </div>
     </div>
   </section>
 
-  <!-- Images and Videos -->
-  <section class="py-16 bg-gray-100 px-6 max-w-6xl mx-auto" data-aos="fade-up">
-    <h2 class="section-title text-center">📸 Gallery & Videos</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <img class="rounded-lg shadow" src="https://www.investindia.gov.in/sites/default/files/2023-08/Chenab%20Bridge.jpg" alt="Chenab Bridge 1">
-      <iframe class="rounded-lg shadow w-full h-64" src="https://www.youtube.com/embed/_Etz95NlP9A" title="Chenab Bridge Video" allowfullscreen></iframe>
+  <section id="architecture" class="bg-white py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center section-title">🏛️ Architectural Grandeur</h2>
+    <div class="mt-10 grid md:grid-cols-2 gap-8 items-center">
+      <div class="space-y-4">
+        <img src="https://i.pinimg.com/736x/4a/b1/61/4ab161a83469735b9a79537edafd5ac2.jpg" alt="Akshardham Temple Front View" class="w-full h-auto rounded-xl shadow-lg border-4 border-orange-300">
+        <p class="text-sm text-center italic text-gray-600">Intricate carvings adorn the sandstone and marble of the main monument</p>
+      </div>
+      <div class="space-y-4">
+        <p><strong>Material:</strong> Rajasthani pink sandstone and Italian Carrara marble (no steel used)</p>
+        <p><strong>Design:</strong> Traditional Indian architecture — domes, mandapas, shikharas</p>
+        <p><strong>Craftsmen:</strong> 7,000+ artisans and volunteers from across India</p>
+        <blockquote class="italic text-gray-700 border-l-4 border-orange-500 pl-4">
+          “A timeless testimony to Indian culture, spirituality, and architecture.”
+        </blockquote>
+      </div>
     </div>
   </section>
-
-  <!-- Engineering Marvels -->
-  <section class="py-16 px-6 max-w-6xl mx-auto bg-white" data-aos="fade-up">
-    <h2 class="section-title">🔩 Engineering Marvels</h2>
-    <ul class="list-disc list-inside text-lg">
-      <li>Blast-proof steel used in key zones</li>
-      <li>Wind tunnel tested in Denmark & Germany</li>
-      <li>Longest cable crane system: 915m span</li>
-      <li>Constructed without ground support</li>
-      <li>Temperature extremes: -20°C to 45°C</li>
+   
+  <section id="features" class="bg-gray-100 py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center section-title">🌟 Key Attractions & Features</h2>
+    <ul class="list-disc list-inside mt-6 space-y-2">
+      <li><strong>Sahaj Anand Water Show:</strong> A multimedia fountain show depicting a Vedic tale</li>
+      <li><strong>Exhibition Halls:</strong> 3 halls with films, animatronics, dioramas (Neelkanth Yatra, etc.)</li>
+      <li><strong>Yagnapurush Kund:</strong> Largest stepwell-style musical fountain</li>
+      <li><strong>Garden of India:</strong> Bronze statues of Indian heroes and sages</li>
+      <li><strong>Abhishek Mandap:</strong> Devotees can perform water offerings</li>
     </ul>
   </section>
 
-  <!-- Human Spirit & Safety -->
-  <section class="bg-gray-50 py-16 px-6 max-w-6xl mx-auto" data-aos="fade-up">
-    <h2 class="section-title">👷 Human Stories & Safety First</h2>
-    <ul class="list-disc list-inside text-lg">
-      <li>1,300 workers & 300 engineers braved nature</li>
-      <li>Automatic sensors for wind, temperature, seismic activity</li>
-      <li>Blast-resistant design by DRDO input</li>
-      <li>Seismic Zone IV ready</li>
+    <!-- Gallery Section -->
+  <section id="gallery" class="bg-gray-50 py-12 px-6 max-w-6xl mx-auto" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center section-title">Visual Experience</h2>
+    
+    <!-- Videos -->
+  
+    <div class="flex justify-center mt-6">
+    <iframe class="rounded-xl shadow-lg border-4 border-orange-300 w-[400px] h-[400px]"
+      src="https://www.youtube.com/embed/DwsYVv36Vo0"
+      title="Akshardham Drone View"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+
+
+  <section class="bg-white py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+    <div class="grid md:grid-cols-2 gap-8 mt-10">
+   <div class="">
+    <img src="https://akshardham.com/newdelhi/wp-content/uploads/2015/04/akshardham_gajendrapith.jpg" alt="Akshardham Temple Front View" class="w-full h-auto rounded-xl shadow-lg border-4 border-orange-300">
+    
+   </div>
+
+   <div class="">
+    <img src="https://wallpapercave.com/wp/wp3917582.jpg" alt="Akshardham Temple Front View" class="w-full h-auto rounded-xl shadow-lg border-4 border-orange-300">
+
+   </div>
+   </div>
+   <div class="grid md:grid-cols-2 gap-8 mt-10">
+   <div class="">
+     <img src="https://i.pinimg.com/736x/af/d0/58/afd058d7267b41f19f6bded357903146.jpg" alt="Akshardham Temple Front View" class="w-full h-auto rounded-xl shadow-lg border-4 border-orange-300">
+     </div>
+     <div class="">
+    <img src="https://akshardham.com/newdelhi/wp-content/uploads/2015/05/akshardham_monument_evening-106.jpg" alt="Akshardham Temple Front View" class="w-full h-auto rounded-xl shadow-lg border-4 border-orange-300">
+   </div>
+  </div>
+   </section>
+
+  <section id="importance" class="py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center section-title">🕊️ Spiritual & Cultural Significance</h2>
+    <p class="mt-4">Akshardham is more than a monument — it's a spiritual journey and cultural showcase:</p>
+    <ul class="list-disc list-inside mt-4 space-y-2">
+      <li>Promotes values like peace, harmony, devotion, and service</li>
+      <li>Encourages youth engagement and volunteerism</li>
+      <li>UNESCO and international figures have praised it as a “modern wonder”</li>
+      <li>Built using traditional techniques, echoing Vastu Shastra and Shilpa Shastra</li>
+      <li>Symbolizes the eternal connection between India’s past and future</li>
     </ul>
   </section>
 
-  <!-- Symbolism -->
-  <section class="bg-white py-16 px-6 max-w-6xl mx-auto" data-aos="fade-up">
-    <h2 class="section-title">🌟 Symbolism & Significance</h2>
-    <p class="text-lg leading-relaxed">
-      The Chenab Bridge is a <span class="highlight">symbol of unity</span>, strategic strength, and national pride. It integrates the Kashmir Valley, supports troop movement, and attracts tourism.
-    </p>
-    <ul class="list-disc list-inside mt-4 text-lg">
-      <li>Time capsule buried during construction</li>
-      <li>Visible from satellite imagery</li>
-      <li>Future plans include museum, tours, and photo points</li>
-    </ul>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-8 text-center">
-    <p>© 2025 Chenab Bridge | Built with 🇮🇳 ingenuity</p>
+  <footer class="transition-colors bg-[#BC906E] text-white text-center py-6 mt-10">
+    <p>Celebrating India's living spirituality | BAPS Anand</p>
   </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000 });</script>
+  <script>AOS.init();</script>
+  <script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 </body>
 </html>
